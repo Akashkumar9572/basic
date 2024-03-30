@@ -6,7 +6,7 @@ import light_dark from '../image/light-dark.webp'
 
 const Projects = () => {
   return (
-    <div className=' w-full flex justify-center items-center flex-col gap-10'>
+    <div className=' w-full flex justify-center items-center flex-col gap-10 h-screen bg-red-100' id='projects'>
  
   <div className="mt-24 text-5xl font-bold text-red-700">My Projects</div>
    
@@ -52,7 +52,28 @@ const Projects = () => {
 
         <div className=' mt-5 '><span className='font-bold'>Description :</span>  In this app we can toggle application in dark and light mode</div>
 
-        <div className=' mt-5 '><span className='font-bold'>Languages used :</span>  HTML, Tailwind, React</div> 
+        <div className=' mt-5 '><span className='font-bold'>Languages used :</span>  HTML, Tailwind, React</div>
+
+        <div
+          className="box-card border-2 rounded-xl h-72 w-64
+        
+        opacity-90 hover:opacity-100 transition-opacity duration-300
+        hover:border-b-green-500 relative"
+        >
+          {/* <img src={ReactCardThumb} alt="" className="" /> */}
+          <div className="flex  items-center justify-center absolute top-0  border-1 rounded-t-xl  h-44 w-64 backdrop-blur-[1px] opacity-0 hover:opacity-100 transition-opacity duration-300">
+          <i class="fa-brands fa-github   mt-24 pr-3 text-3xl text-green-500 "></i>
+          </div>
+          <div className=" p-2 pt-4 pb-0 text-gray-300">•Business Card</div>
+          <div className="p-2 pt-0 pb-0 text-gray-300">
+            •Custom business card design using React for a personalized touch.{" "}
+            <br />
+            Click to view.
+          </div>
+          <div className="pl-2  text-gray-300 tracking-tight">
+            •Language used - React & Tailwind CSS
+          </div>
+        </div>
         </div>
 
       </div>

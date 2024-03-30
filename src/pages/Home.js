@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import dog from '../image/dog.jpg'
 
 const Home = () => {
 
@@ -10,53 +11,17 @@ const Home = () => {
   }
 
   return (
-    <>
-      <div className='center h-screen  gap-10 flex-col '>
-
-        <div className="h-[550px] w-[400px] border-2 border-black p-3 relative">
-          <input type="text"
-            className='border-[2px] text-gray-600 border-black h-24 w-full text-5xl font-bold rounded-lg p-2 '
-            value={name}
-            onChange={(e) => setName(e.target.value)} />
-<div className='flex gap-2 m-4'>
-<div className="bg-white border-2 border-black font-bold w-12 h-12 center rounded-lg cursor-pointer hover:bg-gray-400 text-3xl "
-            onClick={() => setName(name+"0")}
-          >0</div>
-          <div className="bg-white border-2 border-black font-bold w-12 h-12 center rounded-lg cursor-pointer hover:bg-gray-400 text-3xl "
-            onClick={() => setName(name+"1")}
-          >1</div>
-          <div className="bg-white border-2 border-black font-bold w-12 h-12 center rounded-lg cursor-pointer hover:bg-gray-400 text-3xl "
-            onClick={() => setName(name+"2")}
-          >2</div>
-          <div className="bg-white border-2 border-black font-bold w-12 h-12 center rounded-lg cursor-pointer hover:bg-gray-400 text-3xl "
-            onClick={() => setName(name+"3")}
-          >3</div>
-
-<div className="bg-white border-2 border-black font-bold w-12 h-12 center rounded-lg cursor-pointer hover:bg-gray-400 text-3xl "
-            onClick={() => setName(name+"+")}
-          >+</div>
-
-<div className="bg-white border-2 border-black font-bold w-12 h-12 center rounded-lg cursor-pointer hover:bg-gray-400 text-3xl "
-            onClick={() => setName(name+"-")}
-          >-</div>
-
-<div className="bg-white border-2 text-2xl font-bold border-black  w-28 h-12 center   rounded-lg cursor-pointer hover:bg-gray-400 absolute bottom-0"
-          onClick={() => equal()}
-        >=</div>
-</div>
-          
-
-        </div>
-
-
-
-
-
-       
-        
+    <>      
+        <div className=" flex flex-col md:flex-row p-4 mt-24">
+      <div className="md:w-1/2 p-4  center flex-col">
+        <h1 className="text-7xl font-bold">Hi, I am Akash</h1>
+        <p className="text-gray-700 mt-4 w-3/5 text-xl">Welcome to my portfolio! I am a passionate frontend developer with expertise in building user-friendly and responsive web applications. Feel free to explore my work and download my resume to learn more about my skills and experiences.</p>
+        <button className="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-700">Download Resume</button>
       </div>
-
-
+      <div className="md:w-1/2 p-4 mt-5 center ">
+        <img src={dog} alt="Your Name" className="w-3/5 h-auto rounded" />
+      </div>
+    </div>
     </>
   )
 }

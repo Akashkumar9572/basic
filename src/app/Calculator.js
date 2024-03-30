@@ -32,7 +32,7 @@ const Calculator = () => {
           (item, index) => (
             <button
               key={index}
-              className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+              className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 ;"
               onClick={() => handleButtonClick(item)}
             >
               {item}
